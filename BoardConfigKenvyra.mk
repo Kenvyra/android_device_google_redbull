@@ -25,8 +25,8 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := $(filter-out $(BOOT_KERNEL_MODULES), $(KERNE
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(filter $(BOOT_KERNEL_MODULES), $(KERNEL_MODULES_LOAD))
 
 # Manifests
-DEVICE_MANIFEST_FILE += device/google/redbull/lineage_manifest.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/lineage/config/device_framework_matrix.xml
+DEVICE_MANIFEST_FILE += device/google/redbull/kenvyra_manifest.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/kenvyra/config/device_framework_matrix.xml
 
 # Needed for camera
 TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
@@ -48,8 +48,8 @@ BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE := 92160000
 endif
 
 # SELinux
-BOARD_SEPOLICY_DIRS += device/google/redbull/sepolicy-lineage/dynamic
-BOARD_SEPOLICY_DIRS += device/google/redbull/sepolicy-lineage/vendor
+BOARD_SEPOLICY_DIRS += device/google/redbull/sepolicy-kenvyra/dynamic
+BOARD_SEPOLICY_DIRS += device/google/redbull/sepolicy-kenvyra/vendor
 
 # Verified Boot
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
